@@ -61,6 +61,8 @@ if (
     );
   }
 
+
+
   sendHttpRequest(
     url,
     (statusCode, headers, body) => {
@@ -123,10 +125,12 @@ function sendEventRequest() {
         RequestBody: bodyData,
       })
     );
-  }
+  };
 
   sendHttpRequest(
-    url,
+
+
+    url, statusCode
     (statusCode, headers, body) => {
       if (isLoggingEnabled) {
         logToConsole(
